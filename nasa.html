@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Mapping and Analysis</title>
+    <link rel="stylesheet" href="nasa1.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&callback=initMap" async defer></script>
+    <script src="nasa2.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Community Mapping and Analysis</h1>
+        <p>Project Proposal: Gather and analyze data about various locations.</p>
+    </header>
+
+    <section id="location-input">
+        <h2>Enter a Location</h2>
+        <input type="text" id="location" placeholder="Enter location name...">
+        <button id="get-location">Get Data</button>
+    </section>
+
+    <section id="map-section">
+        <h2>Map View</h2>
+        <div id="map"></div>
+        <div id="info"></div>
+    </section>
+
+    <section id="translate-section">
+        <h2>Translate Location</h2>
+        <select id="language-select">
+            <option value="en">English</option>
+            <option value="es">Spanish</option>
+            <option value="fr">French</option>
+            <option value="de">German</option>
+        </select>
+        <button id="translate-button">Translate</button>
+    </section>
+
+    <section id="distance-section">
+        <h2>Distance Calculator</h2>
+        <input type="text" id="start-location" placeholder="Starting Location">
+        <input type="text" id="end-location" placeholder="Destination Location">
+        <button id="calculate-distance">Calculate Distance</button>
+        <div id="distance-result"></div>
+    </section>
+
+    <footer>
+        <p>© 2024 Community Mapping Project</p>
+    </footer>
+</body>
+</html>
